@@ -21230,21 +21230,6 @@ Source: AVX .. aphvc.pdf</description>
 <label x="215.9" y="66.04" size="1.778" layer="95"/>
 <pinref part="JP1" gate="A" pin="29"/>
 </segment>
-<segment>
-<wire x1="-5.08" y1="132.08" x2="15.24" y2="132.08" width="0.1524" layer="91"/>
-<label x="-5.08" y="132.08" size="1.778" layer="95"/>
-<pinref part="MAR2" gate="A" pin="G1"/>
-</segment>
-<segment>
-<wire x1="-5.08" y1="170.18" x2="15.24" y2="170.18" width="0.1524" layer="91"/>
-<label x="-5.08" y="170.18" size="1.778" layer="95"/>
-<pinref part="MAR1" gate="A" pin="G1"/>
-</segment>
-<segment>
-<wire x1="-5.08" y1="213.36" x2="15.24" y2="213.36" width="0.1524" layer="91"/>
-<label x="-5.08" y="213.36" size="1.778" layer="95"/>
-<pinref part="MAR0" gate="A" pin="G1"/>
-</segment>
 </net>
 <net name="N$1" class="0">
 <segment>

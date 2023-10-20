@@ -2292,11 +2292,11 @@ design rules under a new name.</description>
 <attribute name="POPULARITY" value="0" x="10.16" y="59.69" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="9.525" y="67.183" size="1.27" layer="27" ratio="10" rot="R270"/>
 </element>
-<element name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" package="E5-8,5" package3d_urn="urn:adsk.eagle:package:23374/1" value="10u" x="87.63" y="73.66" smashed="yes">
-<attribute name="NAME" x="91.7702" y="75.946" size="1.27" layer="25" ratio="10"/>
-<attribute name="POPULARITY" value="0" x="87.63" y="73.66" size="1.778" layer="27" display="off"/>
-<attribute name="SPICEPREFIX" value="C" x="87.63" y="73.66" size="1.778" layer="27" display="off"/>
-<attribute name="VALUE" x="85.1154" y="70.6374" size="1.27" layer="27" ratio="10"/>
+<element name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" package="E5-8,5" package3d_urn="urn:adsk.eagle:package:23374/1" value="10u" x="88.9" y="74.93" smashed="yes">
+<attribute name="NAME" x="93.0402" y="77.216" size="1.27" layer="25" ratio="10"/>
+<attribute name="POPULARITY" value="0" x="88.9" y="74.93" size="1.778" layer="27" display="off"/>
+<attribute name="SPICEPREFIX" value="C" x="88.9" y="74.93" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="86.3854" y="71.9074" size="1.27" layer="27" ratio="10"/>
 </element>
 <element name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" package="C050-025X075" package3d_urn="urn:adsk.eagle:package:23637/1" value="" x="22.86" y="36.83" smashed="yes" rot="R180">
 <attribute name="POPULARITY" value="29" x="34.29" y="46.99" size="1.778" layer="27" rot="R180" display="off"/>
@@ -2363,7 +2363,7 @@ design rules under a new name.</description>
 <attribute name="POPULARITY" value="0" x="22.86" y="20.32" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="22.479" y="30.099" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="BUFF_RAM" library="74xx-eu" library_urn="urn:adsk.eagle:library:85" package="DIL20" package3d_urn="urn:adsk.eagle:package:16429/2" value="74LS245N" x="49.53" y="20.32" smashed="yes" rot="R270">
+<element name="BUFF_D" library="74xx-eu" library_urn="urn:adsk.eagle:library:85" package="DIL20" package3d_urn="urn:adsk.eagle:package:16429/2" value="74LS245N" x="49.53" y="20.32" smashed="yes" rot="R270">
 <attribute name="NAME" x="46.482" y="33.401" size="1.27" layer="25"/>
 <attribute name="POPULARITY" value="0" x="49.53" y="20.32" size="1.778" layer="27" rot="R270" display="off"/>
 <attribute name="VALUE" x="49.149" y="30.099" size="1.27" layer="27" rot="R270"/>
@@ -2378,16 +2378,10 @@ design rules under a new name.</description>
 <contactref element="SP0" pad="10"/>
 <contactref element="SP1" pad="10"/>
 <contactref element="SP2" pad="10"/>
-<contactref element="BUFF_RAM" pad="10"/>
-<contactref element="MAR2" pad="2"/>
-<contactref element="MAR1" pad="2"/>
-<contactref element="MAR0" pad="2"/>
+<contactref element="BUFF_D" pad="10"/>
 <wire x1="31.75" y1="50.8" x2="81.28" y2="53.34" width="0" layer="19" extent="1-1"/>
 <wire x1="19.05" y1="50.8" x2="31.75" y2="50.8" width="0" layer="19" extent="1-1"/>
 <wire x1="6.35" y1="50.8" x2="19.05" y2="50.8" width="0" layer="19" extent="1-1"/>
-<wire x1="31.75" y1="66.04" x2="31.75" y2="50.8" width="0" layer="19" extent="1-1"/>
-<wire x1="19.05" y1="66.04" x2="31.75" y2="66.04" width="0" layer="19" extent="1-1"/>
-<wire x1="6.35" y1="66.04" x2="19.05" y2="66.04" width="0" layer="19" extent="1-1"/>
 <wire x1="31.75" y1="8.89" x2="31.75" y2="50.8" width="0" layer="19" extent="1-1"/>
 <wire x1="19.05" y1="8.89" x2="31.75" y2="8.89" width="0" layer="19" extent="1-1"/>
 <wire x1="6.35" y1="8.89" x2="19.05" y2="8.89" width="0" layer="19" extent="1-1"/>
@@ -2474,58 +2468,42 @@ design rules under a new name.</description>
 <signal name="DATA0">
 <contactref element="LED17" pad="A"/>
 <contactref element="RAM" pad="11"/>
-<contactref element="BUFF_RAM" pad="2"/>
-<wire x1="45.72" y1="29.21" x2="73.66" y2="53.34" width="0" layer="19" extent="1-1"/>
-<wire x1="75.72" y1="10.16" x2="45.72" y2="29.21" width="0" layer="19" extent="1-1"/>
+<wire x1="75.72" y1="10.16" x2="73.66" y2="53.34" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DATA1">
 <contactref element="LED18" pad="A"/>
 <contactref element="RAM" pad="12"/>
-<contactref element="BUFF_RAM" pad="3"/>
-<wire x1="45.72" y1="26.67" x2="76.2" y2="53.34" width="0" layer="19" extent="1-1"/>
-<wire x1="75.72" y1="12.7" x2="45.72" y2="26.67" width="0" layer="19" extent="1-1"/>
+<wire x1="75.72" y1="12.7" x2="76.2" y2="53.34" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DATA2">
 <contactref element="LED19" pad="A"/>
 <contactref element="RAM" pad="13"/>
-<contactref element="BUFF_RAM" pad="4"/>
 <wire x1="75.72" y1="15.24" x2="78.74" y2="53.34" width="0" layer="19" extent="1-1"/>
-<wire x1="45.72" y1="24.13" x2="75.72" y2="15.24" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DATA3">
 <contactref element="LED20" pad="A"/>
 <contactref element="RAM" pad="15"/>
-<contactref element="BUFF_RAM" pad="5"/>
 <wire x1="75.72" y1="17.78" x2="81.28" y2="68.58" width="0" layer="19" extent="1-1"/>
-<wire x1="45.72" y1="21.59" x2="75.72" y2="17.78" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DATA4">
 <contactref element="LED21" pad="A"/>
 <contactref element="RAM" pad="16"/>
-<contactref element="BUFF_RAM" pad="6"/>
 <wire x1="75.72" y1="20.32" x2="78.74" y2="68.58" width="0" layer="19" extent="1-1"/>
-<wire x1="45.72" y1="19.05" x2="75.72" y2="20.32" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DATA5">
 <contactref element="LED22" pad="A"/>
 <contactref element="RAM" pad="17"/>
-<contactref element="BUFF_RAM" pad="7"/>
 <wire x1="75.72" y1="22.86" x2="76.2" y2="68.58" width="0" layer="19" extent="1-1"/>
-<wire x1="45.72" y1="16.51" x2="75.72" y2="22.86" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DATA6">
 <contactref element="LED23" pad="A"/>
 <contactref element="RAM" pad="18"/>
-<contactref element="BUFF_RAM" pad="8"/>
 <wire x1="75.72" y1="25.4" x2="73.66" y2="68.58" width="0" layer="19" extent="1-1"/>
-<wire x1="45.72" y1="13.97" x2="75.72" y2="25.4" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="DATA7">
 <contactref element="LED24" pad="A"/>
 <contactref element="RAM" pad="19"/>
-<contactref element="BUFF_RAM" pad="9"/>
 <wire x1="75.72" y1="27.94" x2="71.12" y2="68.58" width="0" layer="19" extent="1-1"/>
-<wire x1="45.72" y1="11.43" x2="75.72" y2="27.94" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="VCC">
 <contactref element="RAM" pad="28"/>
@@ -2554,12 +2532,12 @@ design rules under a new name.</description>
 <contactref element="SP0" pad="20"/>
 <contactref element="SP1" pad="20"/>
 <contactref element="SP2" pad="20"/>
-<contactref element="BUFF_RAM" pad="20"/>
+<contactref element="BUFF_D" pad="20"/>
 <wire x1="93.65" y1="64.13" x2="96.19" y2="64.13" width="0" layer="19" extent="1-1"/>
 <wire x1="96.19" y1="61.59" x2="96.19" y2="64.13" width="0" layer="19" extent="1-1"/>
 <wire x1="93.65" y1="61.59" x2="93.65" y2="64.13" width="0" layer="19" extent="1-1"/>
-<wire x1="85.09" y1="73.66" x2="93.65" y2="64.13" width="0" layer="19" extent="1-1"/>
-<wire x1="48.26" y1="68.58" x2="85.09" y2="73.66" width="0" layer="19" extent="1-1"/>
+<wire x1="86.36" y1="74.93" x2="93.65" y2="64.13" width="0" layer="19" extent="1-1"/>
+<wire x1="48.26" y1="68.58" x2="86.36" y2="74.93" width="0" layer="19" extent="1-1"/>
 <wire x1="39.37" y1="68.58" x2="48.26" y2="68.58" width="0" layer="19" extent="1-1"/>
 <wire x1="38.1" y1="73.66" x2="39.37" y2="68.58" width="0" layer="19" extent="1-1"/>
 <wire x1="26.67" y1="68.58" x2="38.1" y2="73.66" width="0" layer="19" extent="1-1"/>
@@ -2582,89 +2560,70 @@ design rules under a new name.</description>
 <wire x1="48.26" y1="73.66" x2="52.07" y2="36.83" width="0" layer="19" extent="1-1"/>
 <wire x1="53.34" y1="31.75" x2="13.97" y2="31.75" width="0" layer="19" extent="1-1"/>
 </signal>
+<signal name="PAG0">
+<contactref element="JP1" pad="15"/>
+</signal>
+<signal name="PAG1">
+<contactref element="JP1" pad="17"/>
+</signal>
+<signal name="PAG2">
+<contactref element="JP1" pad="19"/>
+</signal>
 <signal name="BUS4">
 <contactref element="JP1" pad="9"/>
 <contactref element="MAR1" pad="14"/>
-<contactref element="BUFF_RAM" pad="14"/>
-<wire x1="53.34" y1="16.51" x2="93.65" y2="53.97" width="0" layer="19" extent="1-1"/>
-<wire x1="26.67" y1="63.5" x2="53.34" y2="16.51" width="0" layer="19" extent="1-1"/>
+<wire x1="26.67" y1="63.5" x2="93.65" y2="53.97" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BUS5">
 <contactref element="JP1" pad="10"/>
 <contactref element="MAR1" pad="13"/>
-<contactref element="BUFF_RAM" pad="13"/>
-<wire x1="53.34" y1="13.97" x2="96.19" y2="53.97" width="0" layer="19" extent="1-1"/>
-<wire x1="26.67" y1="60.96" x2="53.34" y2="13.97" width="0" layer="19" extent="1-1"/>
+<wire x1="26.67" y1="60.96" x2="96.19" y2="53.97" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BUS6">
 <contactref element="JP1" pad="11"/>
 <contactref element="MAR1" pad="12"/>
-<contactref element="BUFF_RAM" pad="12"/>
-<wire x1="53.34" y1="11.43" x2="93.65" y2="51.43" width="0" layer="19" extent="1-1"/>
-<wire x1="26.67" y1="58.42" x2="53.34" y2="11.43" width="0" layer="19" extent="1-1"/>
+<wire x1="26.67" y1="58.42" x2="93.65" y2="51.43" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BUS7">
 <contactref element="JP1" pad="12"/>
 <contactref element="MAR1" pad="11"/>
-<contactref element="BUFF_RAM" pad="11"/>
-<wire x1="53.34" y1="8.89" x2="96.19" y2="51.43" width="0" layer="19" extent="1-1"/>
-<wire x1="26.67" y1="55.88" x2="53.34" y2="8.89" width="0" layer="19" extent="1-1"/>
+<wire x1="26.67" y1="55.88" x2="96.19" y2="51.43" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BUS0">
 <contactref element="JP1" pad="5"/>
 <contactref element="MAR0" pad="14"/>
 <contactref element="MAR2" pad="14"/>
-<contactref element="BUFF_RAM" pad="18"/>
-<wire x1="53.34" y1="26.67" x2="93.65" y2="59.05" width="0" layer="19" extent="1-1"/>
-<wire x1="39.37" y1="63.5" x2="53.34" y2="26.67" width="0" layer="19" extent="1-1"/>
-<wire x1="13.97" y1="63.5" x2="39.37" y2="63.5" width="0" layer="19" extent="1-1"/>
+<wire x1="13.97" y1="63.5" x2="93.65" y2="59.05" width="0" layer="19" extent="1-1"/>
+<wire x1="39.37" y1="63.5" x2="13.97" y2="63.5" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BUS1">
 <contactref element="JP1" pad="6"/>
 <contactref element="MAR0" pad="13"/>
 <contactref element="MAR2" pad="13"/>
-<contactref element="BUFF_RAM" pad="17"/>
-<wire x1="53.34" y1="24.13" x2="96.19" y2="59.05" width="0" layer="19" extent="1-1"/>
-<wire x1="39.37" y1="60.96" x2="53.34" y2="24.13" width="0" layer="19" extent="1-1"/>
-<wire x1="13.97" y1="60.96" x2="39.37" y2="60.96" width="0" layer="19" extent="1-1"/>
+<wire x1="13.97" y1="60.96" x2="96.19" y2="59.05" width="0" layer="19" extent="1-1"/>
+<wire x1="39.37" y1="60.96" x2="13.97" y2="60.96" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BUS2">
 <contactref element="JP1" pad="7"/>
 <contactref element="MAR0" pad="12"/>
 <contactref element="MAR2" pad="12"/>
-<contactref element="BUFF_RAM" pad="16"/>
-<wire x1="53.34" y1="21.59" x2="93.65" y2="56.51" width="0" layer="19" extent="1-1"/>
-<wire x1="39.37" y1="58.42" x2="53.34" y2="21.59" width="0" layer="19" extent="1-1"/>
-<wire x1="13.97" y1="58.42" x2="39.37" y2="58.42" width="0" layer="19" extent="1-1"/>
+<wire x1="13.97" y1="58.42" x2="93.65" y2="56.51" width="0" layer="19" extent="1-1"/>
+<wire x1="39.37" y1="58.42" x2="13.97" y2="58.42" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="BUS3">
 <contactref element="JP1" pad="8"/>
 <contactref element="MAR0" pad="11"/>
 <contactref element="MAR2" pad="11"/>
-<contactref element="BUFF_RAM" pad="15"/>
-<wire x1="39.37" y1="55.88" x2="96.19" y2="56.51" width="0" layer="19" extent="1-1"/>
-<wire x1="13.97" y1="55.88" x2="39.37" y2="55.88" width="0" layer="19" extent="1-1"/>
-<wire x1="53.34" y1="19.05" x2="39.37" y2="55.88" width="0" layer="19" extent="1-1"/>
+<wire x1="13.97" y1="55.88" x2="96.19" y2="56.51" width="0" layer="19" extent="1-1"/>
+<wire x1="39.37" y1="55.88" x2="13.97" y2="55.88" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="CLK">
 <contactref element="JP1" pad="13"/>
-<contactref element="MAR0" pad="7"/>
-<contactref element="MAR1" pad="7"/>
-<contactref element="MAR2" pad="7"/>
-<wire x1="31.75" y1="53.34" x2="93.65" y2="48.89" width="0" layer="19" extent="1-1"/>
-<wire x1="19.05" y1="53.34" x2="31.75" y2="53.34" width="0" layer="19" extent="1-1"/>
-<wire x1="6.35" y1="53.34" x2="19.05" y2="53.34" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="!WR_MAR">
 <contactref element="R33" pad="2"/>
 <contactref element="JP1" pad="29"/>
-<contactref element="MAR2" pad="9"/>
-<contactref element="MAR1" pad="9"/>
-<contactref element="MAR0" pad="9"/>
 <wire x1="72.07" y1="7.62" x2="93.65" y2="28.57" width="0" layer="19" extent="1-1"/>
-<wire x1="39.37" y1="50.8" x2="72.07" y2="7.62" width="0" layer="19" extent="1-1"/>
-<wire x1="26.67" y1="50.8" x2="39.37" y2="50.8" width="0" layer="19" extent="1-1"/>
-<wire x1="13.97" y1="50.8" x2="26.67" y2="50.8" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="N$1">
 <contactref element="LED1" pad="C"/>
@@ -2800,7 +2759,7 @@ design rules under a new name.</description>
 <contactref element="R11" pad="2"/>
 <contactref element="R10" pad="2"/>
 <contactref element="R9" pad="2"/>
-<wire x1="84.77" y1="27.94" x2="90.17" y2="73.66" width="0" layer="19" extent="1-1"/>
+<wire x1="84.77" y1="27.94" x2="91.44" y2="74.93" width="0" layer="19" extent="1-1"/>
 <wire x1="84.77" y1="25.4" x2="84.77" y2="27.94" width="0" layer="19" extent="1-1"/>
 <wire x1="84.77" y1="22.86" x2="84.77" y2="25.4" width="0" layer="19" extent="1-1"/>
 <wire x1="84.77" y1="20.32" x2="84.77" y2="22.86" width="0" layer="19" extent="1-1"/>
@@ -2869,13 +2828,7 @@ design rules under a new name.</description>
 <signal name="!RD_MAR">
 <contactref element="R34" pad="2"/>
 <contactref element="JP1" pad="30"/>
-<contactref element="MAR2" pad="1"/>
-<contactref element="MAR1" pad="1"/>
-<contactref element="MAR0" pad="1"/>
 <wire x1="72.07" y1="5.08" x2="96.19" y2="28.57" width="0" layer="19" extent="1-1"/>
-<wire x1="31.75" y1="68.58" x2="72.07" y2="5.08" width="0" layer="19" extent="1-1"/>
-<wire x1="19.05" y1="68.58" x2="31.75" y2="68.58" width="0" layer="19" extent="1-1"/>
-<wire x1="6.35" y1="68.58" x2="19.05" y2="68.58" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="!WR_SP">
 <contactref element="R35" pad="2"/>
@@ -2896,6 +2849,12 @@ design rules under a new name.</description>
 <contactref element="R38" pad="2"/>
 <contactref element="JP1" pad="34"/>
 <wire x1="16.19" y1="45.72" x2="96.19" y2="23.49" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="PAG3">
+<contactref element="JP1" pad="21"/>
+</signal>
+<signal name="PAG4">
+<contactref element="JP1" pad="23"/>
 </signal>
 <signal name="SP_DIR">
 <contactref element="SP0" pad="1"/>
